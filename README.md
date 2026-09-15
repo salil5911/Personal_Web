@@ -9,11 +9,12 @@ scroll-reveal animations, a typewriter hero, and a terminal-style "about" card.
 
 ## Pages
 
-Each section lives on its own page (`index.html`, `about.html`, `experience.html`,
-`research.html`, `contact.html`) for cleaner indexing in search engines. Education
-lives inside About, and professional service lives inside Experience. Shared
-chrome (nav, footer, background canvas, styles/scripts) is duplicated in each
-file since there's no build step — update all files together when changing it.
+Each section lives on its own page (`index.html`, `about.html`, `research.html`,
+`cv.html`, `contact.html`) for cleaner indexing in search engines. Education
+lives inside About. `cv.html` is a placeholder until a CV is ready to post.
+Shared chrome (nav, footer, background canvas, styles/scripts) is duplicated
+in each file since there's no build step — update all files together when
+changing it.
 
 ## Local preview
 
