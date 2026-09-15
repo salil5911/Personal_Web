@@ -7,6 +7,14 @@ sensing, IoT privacy, and human-computer interaction.
 Built with plain HTML/CSS/JS (no build step) — a canvas particle network background,
 scroll-reveal animations, a typewriter hero, and a terminal-style "about" card.
 
+## Pages
+
+Each section lives on its own page (`index.html`, `about.html`, `education.html`,
+`experience.html`, `research.html`, `publications.html`, `services.html`,
+`skills.html`, `contact.html`) for cleaner indexing in search engines. Shared
+chrome (nav, footer, background canvas, styles/scripts) is duplicated in each
+file since there's no build step — update all files together when changing it.
+
 ## Local preview
 
 ```bash
@@ -24,8 +32,8 @@ One-time setup: in the repo's **Settings → Pages**, set **Source** to
 
 ## Things to personalize
 
-- `salilverma514@gmail.com` — swap for whichever email you want public (Contact
-  section and mailto links in `index.html`).
+- `salverma@augusta.edu` — the public contact email (Contact page and mailto
+  links across all pages). Swap it if you'd rather show a different address.
 - `https://github.com/salil5911` — update if this isn't your GitHub handle, or add
   LinkedIn/X/ORCID links next to it in the hero and contact sections.
 - `assets/img/og-image.png` — regenerate if you change name/title (script not

@@ -34,24 +34,6 @@
   window.addEventListener("scroll", updateProgress, { passive: true });
   updateProgress();
 
-  /* ---------- active nav link on scroll ---------- */
-  const sections = document.querySelectorAll("main section[id]");
-  const navAnchors = document.querySelectorAll("[data-nav]");
-  const navObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute("id");
-          navAnchors.forEach((a) => {
-            a.classList.toggle("active", a.getAttribute("href") === `#${id}`);
-          });
-        }
-      });
-    },
-    { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
-  );
-  sections.forEach((s) => navObserver.observe(s));
-
   /* ---------- reveal-on-scroll ---------- */
   const revealEls = document.querySelectorAll(".reveal");
   revealEls.forEach((el, i) => el.style.setProperty("--reveal-i", i % 6));

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Salil Verma — PhD Researcher | Human Sensing, IoT Privacy &amp; HCI</title>
 <meta name="description" content="Salil Verma is a PhD student at the School of Computer and Cyber Sciences, Augusta University, researching human sensing, IoT privacy, and human-computer interaction.">
-<meta name="keywords" content="Salil Verma, PhD Student, Augusta University, School of Computer and Cyber Sciences, Human Sensing, IoT Privacy, Human-Computer Interaction, HCI, Cyber Security Research">
+<meta name="keywords" content="Salil Verma, PhD Student, Augusta University, School of Computer and Cyber Sciences, Human Sensing, IoT Privacy, Human-Computer Interaction, HCI, Cyber-Physical Systems, Cyber Security Research">
 <meta name="author" content="Salil Verma">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://salil5911.github.io/Personal_Web/">
@@ -37,17 +37,18 @@
   "name": "Salil Verma",
   "url": "https://salil5911.github.io/Personal_Web/",
   "image": "https://salil5911.github.io/Personal_Web/assets/img/og-image.png",
+  "email": "mailto:salverma@augusta.edu",
   "jobTitle": "PhD Student",
   "affiliation": {
     "@type": "CollegeOrUniversity",
     "name": "Augusta University, School of Computer and Cyber Sciences",
     "url": "https://www.augusta.edu/ccs/"
   },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Augusta University"
-  },
-  "knowsAbout": ["Human Sensing", "IoT Privacy", "Human-Computer Interaction", "Cyber Security", "Ubiquitous Computing"],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Augusta University" },
+    { "@type": "CollegeOrUniversity", "name": "Jaypee University of Information Technology" }
+  ],
+  "knowsAbout": ["Human Sensing", "IoT Privacy", "Human-Computer Interaction", "Cyber-Physical Systems", "Cyber Security", "Ubiquitous Computing"],
   "sameAs": [
     "https://scholar.google.com/citations?user=LxXRFHMAAAAJ&hl=en",
     "https://github.com/salil5911"
@@ -64,18 +65,22 @@
 
 <header class="nav-wrap">
   <nav class="nav" aria-label="Primary">
-    <a href="#top" class="nav-logo" aria-label="Salil Verma — home">
+    <a href="index.html" class="nav-logo" aria-label="Salil Verma — home">
       <span class="nav-logo-bracket">&lt;</span>SV<span class="nav-logo-bracket">/&gt;</span>
     </a>
     <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#about" data-nav>About</a></li>
-      <li><a href="#research" data-nav>Research</a></li>
-      <li><a href="#publications" data-nav>Publications</a></li>
-      <li><a href="#skills" data-nav>Skills</a></li>
-      <li><a href="#contact" data-nav>Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -99,13 +104,14 @@
       <p class="hero-desc reveal">
         I build and study systems at the intersection of people and pervasive technology —
         sensing human behavior, securing the Internet of Things, and designing interactions
-        that feel invisible. Currently pursuing my PhD in Computer &amp; Cyber Sciences.
+        that feel invisible. Currently pursuing my PhD in Computer &amp; Cyber Sciences at
+        Augusta University, advised by Dr. Shiwei Fang.
       </p>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=LxXRFHMAAAAJ&hl=en" target="_blank" rel="noopener">
+        <a class="btn btn-primary" href="publications.html">
           View Publications
         </a>
-        <a class="btn btn-ghost" href="#contact">
+        <a class="btn btn-ghost" href="contact.html">
           Get in Touch
         </a>
       </div>
@@ -116,167 +122,131 @@
         <a href="https://github.com/salil5911" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
         </a>
-        <a href="mailto:salilverma514@gmail.com" aria-label="Email">
+        <a href="mailto:salverma@augusta.edu" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm19.4 2.1-9.1 7.1a.5.5 0 0 1-.6 0L2.6 6.1A.4.4 0 0 0 2 6.4V19h20V6.4a.4.4 0 0 0-.6-.3z"/></svg>
         </a>
       </div>
     </div>
-    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+    <a href="#explore" class="scroll-cue" aria-label="Scroll to content">
       <span class="scroll-cue-line"></span>
       <span class="scroll-cue-text">scroll</span>
     </a>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
+  <!-- QUICK STATS + EXPLORE HUB -->
+  <section class="section" id="explore">
     <div class="section-inner">
-      <h2 class="section-title reveal"><span class="tag-num">01</span> About</h2>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p>
-            I'm a PhD student in the <strong>School of Computer and Cyber Sciences at Augusta University</strong>,
-            where my work sits at the intersection of <strong>human sensing</strong>, <strong>IoT privacy</strong>,
-            and <strong>human&#8211;computer interaction</strong>. I'm interested in how ubiquitous sensors and
-            connected devices can understand human behavior and context &mdash; and how we design those systems
-            so they remain private, trustworthy, and genuinely useful to the people they serve.
-          </p>
-          <p>
-            My research blends systems building with human-centered evaluation: prototyping sensing pipelines,
-            probing the privacy implications of always-on IoT devices, and studying how people actually interact
-            with the smart environments we build for them.
-          </p>
+
+      <div class="stat-strip">
+        <div class="stat-item reveal">
+          <strong>3</strong>
+          <span>Degrees, 2 Countries</span>
         </div>
-        <div class="about-terminal reveal" aria-hidden="true">
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-              <span class="terminal-title">whoami.sh</span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="prompt">$</span> whoami</p>
-              <p class="out">salil_verma</p>
-              <p><span class="prompt">$</span> cat role.txt</p>
-              <p class="out">PhD Student @ Augusta University</p>
-              <p><span class="prompt">$</span> cat research.txt</p>
-              <p class="out">["human_sensing", "iot_privacy", "hci"]</p>
-              <p><span class="prompt">$</span> ./status --current</p>
-              <p class="out out-accent">building &amp; researching<span class="blink-block">_</span></p>
-            </div>
-          </div>
+        <div class="stat-item reveal">
+          <strong>7+</strong>
+          <span>Publications &amp; Preprints</span>
+        </div>
+        <div class="stat-item reveal">
+          <strong>3</strong>
+          <span>Core Research Areas</span>
+        </div>
+        <div class="stat-item reveal">
+          <strong>2025</strong>
+          <span>PhD Started</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- RESEARCH -->
-  <section class="section section-alt" id="research">
-    <div class="section-inner">
-      <h2 class="section-title reveal"><span class="tag-num">02</span> Research Focus</h2>
-      <div class="card-grid">
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path>
-            </svg>
-          </div>
-          <h3>Human Sensing</h3>
-          <p>Designing and evaluating sensing systems that infer human activity, physiology, and context from ambient and wearable signals.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="4" y="10" width="16" height="10" rx="1.5"></rect>
-              <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
-              <circle cx="12" cy="15" r="1.3"></circle>
-            </svg>
-          </div>
-          <h3>IoT Privacy</h3>
-          <p>Investigating privacy risks in connected devices and smart environments, and building mechanisms that give users real control over their data.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="13" rx="1.5"></rect>
-              <path d="M8 21h8M12 17v4"></path>
-            </svg>
-          </div>
-          <h3>Human&#8211;Computer Interaction</h3>
-          <p>Studying how people perceive, trust, and interact with intelligent systems &mdash; and translating those insights into better interface and system design.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <h2 class="section-title reveal"><span class="tag-num">&#9670;</span> Explore</h2>
+      <div class="explore-grid">
 
-  <!-- PUBLICATIONS -->
-  <section class="section" id="publications">
-    <div class="section-inner">
-      <h2 class="section-title reveal"><span class="tag-num">03</span> Publications</h2>
-      <div class="pub-panel reveal">
-        <div class="pub-panel-text">
-          <p>
-            My publications, citation metrics, and co-author network are kept up to date on Google Scholar.
-            Check there for the latest peer-reviewed work in human sensing, IoT privacy, and HCI.
-          </p>
-        </div>
-        <a class="btn btn-primary btn-wide" href="https://scholar.google.com/citations?user=LxXRFHMAAAAJ&hl=en" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
-          Google Scholar Profile
+        <a class="explore-card reveal" href="about.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c1.5-4 4.5-6 7.5-6s6 2 7.5 6"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>About</h3>
+          <p>Who I am, what I work on, and how I got here.</p>
         </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <div class="section-inner">
-      <h2 class="section-title reveal"><span class="tag-num">04</span> Skills &amp; Tools</h2>
-      <div class="skills-wrap reveal">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <div class="chip-row">
-            <span class="chip">Python</span><span class="chip">C / C++</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">SQL</span>
+        <a class="explore-card reveal" href="education.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 8.5 12 4l10 4.5-10 4.5-10-4.5Z"></path><path d="M6 10.7v4.8c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-4.8"></path><path d="M20.5 9v6"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
           </div>
-        </div>
-        <div class="skill-group">
-          <h3>Research &amp; Systems</h3>
-          <div class="chip-row">
-            <span class="chip">Sensor Systems</span><span class="chip">IoT Protocols</span><span class="chip">Machine Learning</span><span class="chip">Signal Processing</span><span class="chip">Privacy-Preserving Computation</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3>Tools</h3>
-          <div class="chip-row">
-            <span class="chip">Linux</span><span class="chip">Git</span><span class="chip">PyTorch</span><span class="chip">Arduino / Raspberry Pi</span><span class="chip">LaTeX</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <h3>Education</h3>
+          <p>PhD &amp; M.S. at Augusta University, B.Tech in India.</p>
+        </a>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="section-inner">
-      <h2 class="section-title reveal"><span class="tag-num">05</span> Contact</h2>
-      <div class="contact-grid reveal">
-        <p class="contact-lead">
-          Interested in collaborating, discussing research, or just want to say hi?
-          I'm always happy to connect.
-        </p>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:salilverma514@gmail.com">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm19.4 2.1-9.1 7.1a.5.5 0 0 1-.6 0L2.6 6.1A.4.4 0 0 0 2 6.4V19h20V6.4a.4.4 0 0 0-.6-.3z"/></svg>
-            salilverma514@gmail.com
-          </a>
-          <a class="contact-link" href="https://scholar.google.com/citations?user=LxXRFHMAAAAJ&hl=en" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
-            Google Scholar
-          </a>
-          <a class="contact-link" href="https://github.com/salil5911" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.73.8 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-            GitHub
-          </a>
-        </div>
+        <a class="explore-card reveal" href="experience.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7.5" width="18" height="12" rx="1.5"></rect><path d="M8 7.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.5"></path><path d="M3 12.5h18"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Experience</h3>
+          <p>Research, teaching, and industry roles.</p>
+        </a>
+
+        <a class="explore-card reveal" href="research.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Research</h3>
+          <p>Human sensing, IoT privacy &amp; HCI.</p>
+        </a>
+
+        <a class="explore-card reveal" href="publications.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path><path d="M4 5.5v16"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Publications</h3>
+          <p>Peer-reviewed papers &amp; work in progress.</p>
+        </a>
+
+        <a class="explore-card reveal" href="services.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m12 2 2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4Z"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Services</h3>
+          <p>Reviewing, chairing, and community work.</p>
+        </a>
+
+        <a class="explore-card reveal" href="skills.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"></rect><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.5 4.5l2 2M17.5 4.5l-2 2M4.5 19.5l2-2M17.5 19.5l-2-2"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Skills</h3>
+          <p>Languages, systems, and tools I use.</p>
+        </a>
+
+        <a class="explore-card reveal" href="contact.html">
+          <div class="explore-card-top">
+            <div class="explore-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="m4 6.5 8 6 8-6"></path></svg>
+            </div>
+            <span class="explore-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"></path></svg></span>
+          </div>
+          <h3>Contact</h3>
+          <p>Let's collaborate or just say hi.</p>
+        </a>
+
       </div>
     </div>
   </section>
@@ -284,6 +254,17 @@
 </main>
 
 <footer class="site-footer">
+  <nav class="footer-links" aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="services.html">Services</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <p>&copy; <span id="year"></span> Salil Verma. Built from scratch, hosted on GitHub Pages.</p>
 </footer>
 
