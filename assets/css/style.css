@@ -629,32 +629,6 @@ main, header, footer { position: relative; z-index: 2; }
 .explore-card h3 { font-size: 1.05rem; font-weight: 600; }
 .explore-card p { color: var(--text-dim); font-size: 0.9rem; }
 
-/* ---------- quick stats strip ---------- */
-.stat-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin: 56px 0;
-}
-.stat-item {
-  text-align: center;
-  padding: 22px 12px;
-  border-radius: var(--radius);
-  background: var(--surface);
-  border: 1px solid var(--surface-border);
-}
-.stat-item strong {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 700;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 4px;
-}
-.stat-item span { font-size: 0.78rem; color: var(--text-dim); }
-
 /* ---------- timeline (education / experience) ---------- */
 .timeline { position: relative; padding-left: 32px; }
 .timeline::before {
@@ -818,7 +792,6 @@ main, header, footer { position: relative; z-index: 2; }
   .about-grid { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
   .explore-grid { grid-template-columns: 1fr 1fr; }
-  .stat-strip { grid-template-columns: 1fr 1fr; }
   .service-card { flex-direction: column; }
 
   .hero-grid {
