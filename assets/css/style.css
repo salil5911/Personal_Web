@@ -484,42 +484,6 @@ main, header, footer { position: relative; z-index: 2; }
 .card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
 .card p { color: var(--text-dim); font-size: 0.94rem; }
 
-/* ---------- publications ---------- */
-.pub-panel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  flex-wrap: wrap;
-  padding: 44px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, rgba(79, 243, 214, 0.06), rgba(139, 123, 255, 0.06));
-  border: 1px solid var(--surface-border);
-}
-.pub-panel-text { flex: 1; min-width: 260px; color: var(--text-dim); font-size: 1.02rem; }
-
-/* ---------- skills ---------- */
-.skills-wrap { display: grid; gap: 32px; }
-.skill-group h3 {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-dimmer);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 14px;
-}
-.chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
-.chip {
-  padding: 9px 16px;
-  border-radius: 999px;
-  font-size: 0.86rem;
-  border: 1px solid var(--surface-border);
-  background: var(--surface);
-  color: var(--text-dim);
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-.chip:hover { color: var(--cyan); border-color: var(--cyan); }
-
 /* ---------- contact ---------- */
 .contact-grid { text-align: center; }
 .contact-lead {
@@ -599,8 +563,10 @@ main, header, footer { position: relative; z-index: 2; }
 /* ---------- explore hub grid (home) ---------- */
 .explore-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
 }
 .explore-card {
   display: flex;
@@ -705,41 +671,6 @@ main, header, footer { position: relative; z-index: 2; }
 }
 .pub-intro p { color: var(--text-dim); flex: 1; min-width: 240px; }
 
-.pub-group-title {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dimmer);
-  margin: 40px 0 18px;
-}
-.pub-group-title:first-of-type { margin-top: 0; }
-
-.pub-list { display: flex; flex-direction: column; gap: 14px; }
-.pub-card {
-  padding: 22px 26px;
-  border-radius: var(--radius);
-  background: var(--surface);
-  border: 1px solid var(--surface-border);
-  transition: border-color 0.25s ease, background 0.25s ease;
-}
-.pub-card:hover { border-color: rgba(79, 243, 214, 0.3); background: rgba(255, 255, 255, 0.055); }
-.pub-card-title { font-size: 1rem; font-weight: 600; margin-bottom: 8px; line-height: 1.45; }
-.pub-card-authors { color: var(--text-dim); font-size: 0.88rem; margin-bottom: 6px; }
-.pub-card-authors strong { color: var(--text); font-weight: 600; }
-.pub-card-venue { color: var(--text-dimmer); font-size: 0.85rem; font-family: var(--font-mono); }
-.pub-card-foot { display: flex; align-items: center; gap: 14px; margin-top: 12px; flex-wrap: wrap; }
-.pub-status {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  padding: 3px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--surface-border);
-  color: var(--text-dimmer);
-}
-.pub-status.is-review { color: var(--violet); border-color: rgba(139, 123, 255, 0.35); }
-.pub-status.is-forthcoming { color: var(--pink); border-color: rgba(255, 95, 176, 0.35); }
 .pub-doi { font-size: 0.82rem; color: var(--cyan); }
 .pub-doi:hover { text-decoration: underline; }
 
@@ -791,7 +722,6 @@ main, header, footer { position: relative; z-index: 2; }
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
-  .explore-grid { grid-template-columns: 1fr 1fr; }
   .service-card { flex-direction: column; }
 
   .hero-grid {
@@ -835,7 +765,7 @@ main, header, footer { position: relative; z-index: 2; }
   }
   .nav-links a { padding: 12px 16px; }
   .section { padding: 90px 20px; }
-  .pub-panel { padding: 30px 24px; justify-content: center; text-align: center; }
+  .pub-intro { padding: 30px 24px; justify-content: center; text-align: center; }
 }
 
 @media (max-width: 420px) {

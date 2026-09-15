@@ -9,9 +9,9 @@ scroll-reveal animations, a typewriter hero, and a terminal-style "about" card.
 
 ## Pages
 
-Each section lives on its own page (`index.html`, `about.html`, `education.html`,
-`experience.html`, `research.html`, `publications.html`, `services.html`,
-`skills.html`, `contact.html`) for cleaner indexing in search engines. Shared
+Each section lives on its own page (`index.html`, `about.html`, `experience.html`,
+`research.html`, `contact.html`) for cleaner indexing in search engines. Education
+lives inside About, and professional service lives inside Experience. Shared
 chrome (nav, footer, background canvas, styles/scripts) is duplicated in each
 file since there's no build step — update all files together when changing it.
 
