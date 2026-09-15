@@ -12,16 +12,23 @@ glow effects.
 ## Pages
 
 `index.html` is the homepage and doubles as the About page (intro + bio, merged to
-avoid redundant "who I am" content on two pages). The rest of the site is
-`research.html`, `cv.html` (a placeholder until a real CV is ready to post), and
-`contact.html`. Shared chrome (nav, footer, styles/scripts) is duplicated in each
-file since there's no build step — update all files together when changing it.
+avoid redundant "who I am" content on two pages). The rest of the site lives one
+folder deep as `research/index.html`, `cv/index.html` (a placeholder until a real
+CV is ready to post), and `contact/index.html` — GitHub Pages serves a folder's
+`index.html` at the folder's URL, so the site links as clean paths
+(`/research/`, `/cv/`, `/contact/`) with no `.html` or filename showing in the
+address bar. Shared chrome (nav, footer, styles/scripts) is duplicated in each
+file since there's no build step — update all files together when changing it,
+and use root-relative links (e.g. `/Personal_Web/research/`) everywhere since
+pages live at different folder depths.
 
 ## Local preview
 
 ```bash
-python3 -m http.server 8000
-# open http://localhost:8000
+cd .. && python3 -m http.server 8000
+# open http://localhost:8000/Personal_Web/
+# (served from the parent folder so the root-relative /Personal_Web/... links
+# resolve the same way they do on GitHub Pages)
 ```
 
 ## Deploying (GitHub Pages)
